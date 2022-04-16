@@ -34,8 +34,11 @@ header h1 {
     text-align: right;
 }
 
-header a {
+.header-div a{
     text-decoration: none;
+}
+
+header a {
     color: var(--primary-color);
 }
 
@@ -56,32 +59,39 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.5vw;
     color: var(--background-color);
-
 }
+
 
 .header-div {
     background-color: var(--background-color);
 }
 
+header nav ul li a:hover{
+    background: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 /* Hero styles */
 
 .hero {
-    background-image: url(../images/02-hero-bg.jpg);
-    opacity: 60%;
+    background-image: url(../images/02-hero-bg.jpg); -webkit-filter: saturate(80%) ;
     background-size: cover;
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
     height: 200px;
+    position: relative;
 }
 
-
-
 .hero-text h2 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     background-color: var(--background-color);
     font-size: 23px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     text-align: center;
     padding: 5px;
     color: var(--primary-color);
@@ -89,7 +99,9 @@ header nav ul li a {
 
 /* Main Styles */
 
-.sections h3 {
+
+
+.contact-me h3, .about-me h3, .work-test h3 {
     display: flex;
     flex-wrap: wrap;
     color: var(--secondary-color);
@@ -102,6 +114,44 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
+.work {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work img{
+    max-width: 600px;
+    max-height: 200px;
+}
+
+.surf-report img{
+   
+    width: 100%;
+    width: 800px;
+    height: auto;
+    grid-column: 1/ span 2;
+}
+
+.surf-report div {
+    
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--background-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    box-shadow: #32343d 10px;
+    display: block;
+}
+
+.surf h4, .led h4 {
+    font-size: 25px;
+}
+
+
 /* Footer */
 
 footer {
@@ -112,7 +162,8 @@ footer {
 
 footer ul {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 }

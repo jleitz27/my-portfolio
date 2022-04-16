@@ -116,13 +116,19 @@ header nav ul li a:hover{
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     position: relative;
 }
 
+.about-text{
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .work {
-    /* width: 100%; */
+    width: 100%; 
     /* margin: 0 auto; */
     display: flex;
     flex-wrap: wrap;
@@ -137,17 +143,22 @@ header nav ul li a:hover{
 
 .work img{
     max-width: 800px;
-    max-height: 300px;
+    max-height: 300px; 
     position: relative;
-    width: 100%;
+    width: 100%; 
 }
 
 .work-test{
     margin: 0 10%;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%; 
+    justify-content: center;
 }
 
+#surf{
+    width: 150%;
+}
 .led-wall, .calculator, .pastel-puzzles, .run-buddy {
     width: 50%;
 

@@ -12,7 +12,7 @@ https://jleitz27.github.io/my-portfolio/
 
 ##
 <p align="center">
-  <img src="./assets/images/porfolio-site.png" width="350"
+  <img src="./assets/images/portfolio-site.png" width="350"
 
 </p>
 

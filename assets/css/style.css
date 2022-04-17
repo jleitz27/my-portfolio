@@ -98,6 +98,8 @@ header nav ul li a:hover{
     color: var(--primary-color);
 }
 
+
+
 /* Main Styles */
 
 .titles{
@@ -109,7 +111,7 @@ header nav ul li a:hover{
     align-items: stretch;
     font-size: 40px;
     color: var(--secondary-color);
-    border-right: 1px solid var(--background-color);
+    border-right: 3px solid var(--background-color);
     width: 30%;
 }
 .about-me {
@@ -117,17 +119,20 @@ header nav ul li a:hover{
     flex-wrap: wrap;
     margin: 10px auto;
     position: relative; 
+
     
 }
 
 .me{
-    max-width: 800px;
+    width: 600px;
     margin: 0 0 0 10%;
+    font-size: 18px;
+    color: var(--primary-color);
 }
 
 .work {
     width: 100%; 
-     margin: 0 auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -137,6 +142,11 @@ header nav ul li a:hover{
 .work a{
     text-decoration: none;
     color: var(--primary-color);
+}
+
+.work a:hover{
+    background-color: #C37500;
+    opacity:0.7 !important;
 }
 
 .work img{
@@ -205,5 +215,47 @@ footer ul li a {
     font-size: 1.5vw;
     color: var(--background-color);
     justify-content: space-around;
+}
 
+/* Media Query for Smaller Desktop Screen and Smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .titles{
+        border-right: 0px;
+        border-bottom: 3px solid var(--background-color);
+    }
+
+    .work{
+        display: inline-block;
+    }
+
+    footer ul{
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer ul li a{
+        font-size: 15px;
+    }
 }
